@@ -1,172 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    height: 100vh;
-    background: url("./music-musical-instrument-guitar-two-dark-background.jpg") no-repeat center / cover;
-    padding: 50px 5%;
+  height: 100vh;
+  background: url("./music-musical-instrument-guitar-two-dark-background.jpg") no-repeat center / cover;
+  padding: 50px 5%;
 }
 
 .container {
-    position: relative;
-    height: 100%;
-    background: rgba(185, 83, 16, 0.267);
-    border: 2px solid rgba(185, 83, 16, 0.308);
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    transform: scale(0);
-    animation: zoom-in 1s ease forwards;
+  position: relative;
+  height: 100%;
+  background: rgba(185, 83, 16, 0.267);
+  border: 2px solid rgba(185, 83, 16, 0.308);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  transform: scale(0);
+  animation: zoom-in 1s ease forwards;
 }
 
 @keyframes zoom-in {
-    100% {
-         transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .animated {
-    transform: translateY(30px);
-    opacity: 0;
-    animation: slide-in 1s ease forwards;
-    animation-delay: 1s;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slide-in 1s ease forwards;
+  animation-delay: 1s;
 }
 
-
 @keyframes slide-in {
-    100% {
-         transform: translateY(0);
-         opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .logo {
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .navbar a {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    border-bottom: 2px solid transparent;
-    transition: .5s;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  border-bottom: 2px solid transparent;
+  transition: .5s;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    border-color: #fff;
-
+  border-color: #fff;
 }
 
 .home {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    gap: 50px;
-    padding: 50px 5% 0;
-    color: #fff;
-    animation-delay: 1.5s;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  padding: 50px 5% 0;
+  color: #fff;
+  animation-delay: 1.5s;
 }
 
 .home-detail h1 {
-    font-size: 55px;
-    line-height: 1;
+  font-size: 55px;
+  line-height: 1;
 }
 
-.home-detail h2 { 
-    font-size: 25px;
+.home-detail h2 {
+  font-size: 25px;
 }
 
 .home-detail p {
-    margin: 10px 0 20px;
-    font-size: 16px;
+  margin: 10px 0 20px;
+  font-size: 16px;
 }
 
 .home-detail .download-social {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #fff;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    transition: .5s;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .5s;
 }
 
 .btn:hover {
-    background: transparent;
-    box-shadow: none;
-    color: #fff;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
 }
 
-.home-detail .social-icons {
-    margin-left: 20px;
-
+.home-detail .social-icon {
+  margin-left: 20px;
 }
 
-.home-detail .social-icon a{
-    display: inline-flex;
-    padding: 8px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 8px;
-    transition: .5s;
+.home-detail .social-icon a {
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: .5s;
 }
 
-.home-detail .social-icons a:hover {
-    background: #fff;
-    box-shadow: 0 0 10px #fff;
-    color: #333;
+.home-detail .social-icon a:hover {
+  background: #fff;
+  box-shadow: 0 0 10px #fff;
+  color: #333;
 }
 
 .home-img .img-box {
-    position: relative;
-    width: 28vw;
-    height: 28vw;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #fff;
-    overflow: hidden;
+  position: relative;
+  width: 28vw;
+  height: 28vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+  overflow: hidden;
 }
 
 .home-img .img-box img {
-    position: absolute;
-    bottom: 8px;
-    display: block;
-    width: 95%;
-    object-fit:cover ;
-    ;
+  position: absolute;
+  bottom: 8px;
+  display: block;
+  width: 95%;
+  object-fit: cover;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+    gap: 30px;
+  }
+
+  .home-detail h1 {
+    font-size: 40px;
+  }
+
+  .home-detail h2 {
+    font-size: 20px;
+  }
+
+  .home-detail p {
+    font-size: 14px;
+  }
+
+  .download-social {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-img .img-box {
+    width: 60vw;
+    height: 60vw;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 250px;
+  }
 }
