@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Henrique - PH King</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<audio id="backgroudMusic" loop autoplay>
+  <source src="./src/PHL - I'll Play the Blues For You.mp3" type="audio/mp3">
+</audio>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="animated">
+      <a href="#" class="logo">PH King</a>
+
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Instrumentos</a>
+        <a href="https://www.youtube.com/watch?v=mcRCOJC21Qs">Youtube</a>
+        <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home animated">
+        <div class="home-detail">
+            <h1>Pedro Henrique</h1>
+            <h2>Músico</h2>
+            <p>Tenho 24 anos, toco multiplos Instrumentos e estilos, minha paixão e especialidade é Blues e Folk. Busco uma oportunidade de poder trabalhar com minha arte e fazer o que amo</p>
+             <div class="download-social ">
+              <button onclick="tocarMusica()" class="btn">play</button>
+              <div class="social-icon">
+              <a href="https://www.instagram.com/ph.lobato/"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.facebook.com/Pedrovskyi"><i class="ri-facebook-circle-line"></i></a>
+              <a href="https://spotify.com/ph-king"><i class="ri-spotify-line"></i></a>
+              <a href="https://www.facebook.com/messages/e2ee"><i class="ri-messenger-line"></i></a>
+             </div>
+             </div>
+          </div>
+
+        <home class="home-img">
+            <div class="img-box">
+                <img src="./src/20250524_165147-removebg-preview.png" alt="">
+            </div>
+        </home>
+    </section>
+  </div>
+<script>
+  const audio = document.getElementById('backgroundMusic');
+
+function tocarMusica() {
+  audio.play();
+}
+
+function pausarMusica() {
+  audio.pause();
+}
+
+function mudarVolume(valor) {
+  audio.volume = valor;
+}
+
+</script>
+</body>
+</html>
